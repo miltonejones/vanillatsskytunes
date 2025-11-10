@@ -142,10 +142,10 @@ skytunes/
 
 ```bash
 # Clone the repository
-git clone [repository-url]
+git clone https://github.com/miltonejones/vanillatsskytunes
 
 # Navigate to project directory
-cd skytunes
+cd vanillatsskytunes
 
 # Install dependencies
 npm install
