@@ -1,0 +1,67 @@
+.menu-drawer {
+  position: absolute;
+  top: 0;
+  left: -400px;
+  z-index: 10000;
+  width: 400px;
+  background-color: white;
+  height: 100vh;
+  transition: all 0.5s linear;
+  overflow: auto;
+}
+
+.menu-drawer.right {
+  right: -400px;
+}
+
+.menu-drawer.right.open {
+  right: 0;
+  left: auto;
+}
+
+.menu-drawer.left.open {
+  left: 0;
+}
+
+.drawer-title {
+  padding-left: 1rem;
+  font-weight: 600;
+}
+.menu-drawer.open.wide {
+  width: 95vw;
+}
+
+.close-button {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 0.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.bg-gray-600 {
+  background-color: #444;
+}
+
+.drawer-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .menu-drawer {
+    width: 90vw;
+    left: -100vw;
+  }
+}

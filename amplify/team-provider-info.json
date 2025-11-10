@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nillatunes-dev-2a3ba-authRole",
+      "UnauthRoleArn": "arn:aws:iam::123823813021:role/amplify-nillatunes-dev-2a3ba-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::123823813021:role/amplify-nillatunes-dev-2a3ba-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nillatunes-dev-2a3ba-deployment",
+      "UnauthRoleName": "amplify-nillatunes-dev-2a3ba-unauthRole",
+      "StackName": "amplify-nillatunes-dev-2a3ba",
+      "StackId": "arn:aws:cloudformation:us-east-1:123823813021:stack/amplify-nillatunes-dev-2a3ba/175c7960-bc4f-11f0-90b4-12d4856459a1",
+      "AmplifyAppId": "dcpkpb5v1zmwy"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dcpkpb5v1zmwy",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
