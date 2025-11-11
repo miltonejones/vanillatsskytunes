@@ -1,7 +1,9 @@
 interface PreviousView {
   view: string;
-  id: string;
+  id?: string;
 }
+
+export type Listener = (state: IState) => void;
 
 export interface IState {
   loading: boolean;

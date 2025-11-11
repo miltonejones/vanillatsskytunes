@@ -275,10 +275,10 @@ footer {
     display: inline;
   }
   #app {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 140px);
   }
   #app.playing {
-    height: calc(100vh - 190px);
+    height: calc(100vh - 230px);
   }
 
   .mobile-results {
