@@ -598,30 +598,30 @@ export class AudioPlayer {
     }
   }
 
-  // Show loading spinner (used during announcer playback)
-  showSpinner() {
-    document.querySelectorAll(".stop-btn").forEach((stopper) => {
-      stopper.classList.add("hide");
-    });
-    document.querySelectorAll(".spinner-border").forEach((stopper) => {
-      stopper.classList.remove("hide");
-    });
-  }
+  // // Show loading spinner (used during announcer playback)
+  // showSpinner() {
+  //   document.querySelectorAll(".stop-btn").forEach((stopper) => {
+  //     stopper.classList.add("hide");
+  //   });
+  //   document.querySelectorAll(".spinner-border").forEach((stopper) => {
+  //     stopper.classList.remove("hide");
+  //   });
+  // }
 
-  // Hide loading spinner
-  hideSpinner() {
-    document.querySelectorAll(".stop-btn").forEach((stopper) => {
-      stopper.classList.remove("hide");
-    });
-    document.querySelectorAll(".spinner-border").forEach((stopper) => {
-      stopper.classList.add("hide");
-    });
-  }
+  // // Hide loading spinner
+  // hideSpinner() {
+  //   document.querySelectorAll(".stop-btn").forEach((stopper) => {
+  //     stopper.classList.remove("hide");
+  //   });
+  //   document.querySelectorAll(".spinner-border").forEach((stopper) => {
+  //     stopper.classList.add("hide");
+  //   });
+  // }
 
   // Handle audio announcer (station ID, song introductions, etc.)
   private async handleAnnouncer(state: any): Promise<void> {
     try {
-      this.showSpinner();
+      // this.showSpinner();
       await announceChange(
         state.currentSong.artistName,
         state.currentSong.Title,
@@ -631,7 +631,7 @@ export class AudioPlayer {
         state.chatZip,
         () => {
           // Callback when announcer starts - lower music volume
-          this.hideSpinner();
+          // this.hideSpinner();
           this.audioElement.volume = 0.5;
         },
         () => {
