@@ -8,8 +8,6 @@ export function playlistMenu(state: IState) {
     return list.related && list.related.includes(track?.FileKey) ? true : false;
   };
 
-  console.log({ track });
-
   const menu =
     playlistLib
       ?.map(

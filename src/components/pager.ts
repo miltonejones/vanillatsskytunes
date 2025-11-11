@@ -9,8 +9,6 @@ export function pagination(state: IState) {
       ? `data-view="${state.view}"`
       : `data-type="${state.view}" data-id="${state.detailId}"`;
 
-  console.log({ pageCount });
-
   if (pageCount > 1) {
     // Pagination controls
     html += `

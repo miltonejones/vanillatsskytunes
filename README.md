@@ -83,10 +83,6 @@ A modern, feature-rich music player web application built with TypeScript and va
 - AI announcer configuration
 - Local storage integration
 
-**BannerController (`bannerController.ts`)**
-
-- Banner display management
-
 **ToastController (`toastController.ts`)**
 
 - User notifications
@@ -117,7 +113,6 @@ skytunes/
 │   ├── carouselController.ts # Dashboard carousel
 │   ├── navigationController.ts # URL routing
 │   ├── settingsController.ts # User settings
-│   ├── bannerController.ts # Banner management
 │   └── toastController.ts  # Notifications
 ├── store/                  # State management
 ├── views/                  # View templates

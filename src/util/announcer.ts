@@ -73,20 +73,16 @@ export async function announceChange(
 
     const { messageContent } = json;
 
-    console.log("Announcement response:", { json });
-
     const utterance = new SpeechSynthesisUtterance(messageContent);
 
     // Set up event listeners for speech start and end
     utterance.onstart = (event: SpeechSynthesisUtteranceEvent) => {
-      console.log("Speech started");
       if (onSpeechStart && typeof onSpeechStart === "function") {
         onSpeechStart(event, messageContent);
       }
     };
 
     utterance.onend = (event: SpeechSynthesisUtteranceEvent) => {
-      console.log("Speech ended");
       if (onSpeechEnd && typeof onSpeechEnd === "function") {
         onSpeechEnd(event, messageContent);
       }

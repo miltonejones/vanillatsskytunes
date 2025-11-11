@@ -167,7 +167,6 @@ export class SkytunesStore {
       artist: await getSearch("artist", searchParam),
       album: await getSearch("album", searchParam),
     };
-    // console.log({ searchResults });
     this.setState({ searchResults, searchParam, view: "search" });
   }
 
@@ -185,7 +184,6 @@ export class SkytunesStore {
       titleName: titleName || row.Name,
       trackCount,
     };
-    console.log({ banner });
     this.setState({ banner });
     this.render();
   }
@@ -378,7 +376,6 @@ export class SkytunesStore {
       favorite:
         this.state.relatedPlaylists.indexOf(track?.FileKey) > -1 ? true : false,
     };
-    // console.log({ track, updated });
     return updated;
   }
 
